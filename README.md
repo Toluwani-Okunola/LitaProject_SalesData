@@ -30,6 +30,56 @@ EDA involves exploring the sales data to answer key questions, such as;
   4. What is the monthly sales trends?
 
 ### Data Analysis
+These are the codes I wrote to query the data
+1. Retrieve the total sales for each product category
+ ```
+   SELECT Product, SUM(Sales) AS TotalSales FROM [dbo].[Sales Data]
+    GROUP BY Product
+   ```
+2. Find the numbers of sales transaction in each region
+   ```
+   SELECT Region, COUNT(OrderID) AS No_of_SalesTransaction FROM [dbo].[Sales Data]
+    GROUP BY Region
+   ```
+3. Find the highest-selling product by total sales value
+   ```
+    SELECT TOP 1 Product, SUM(Sales) AS HighestSelling FROM [dbo].[Sales Data]
+    GROUP BY Product
+    ORDER BY 2 desc
+   ```
+4. calculate total revenue per product.
+  ```
+  Select Product, SUM(Sales) AS TotalRevenue FROM [dbo].[Sales Data]
+  GROUP BY Product
+```
+5. Calculate monthly sales totals for the current year.
+```
+SELECT OrderDate, SUM(Sales) AS MonthlySales_Total FROM [dbo].[Sales Data]
+WHERE Orderdate between '2024-01-01' and '2024-12-31'
+GROUP BY OrderDate
+ORDER by OrderDate
+```
+6. find the top 5 customers by total purchase amount.
+```
+SELECT TOP 5 (CustomerID),SUM(Sales) AS TotalPurchase FROM [dbo].[Sales Data]
+GROUP BY CustomerID
+ORDER BY TotalPurchase desc
+```
+7. calculate the percentage of total sales contributed by each region.
+```
+WITH Region AS (
+SELECT Region, SUM(Sales) AS Sales FROM [dbo].[Sales Data]
+GROUP BY Region)
+SELECT Region, (Sales * 100.0 / (SELECT SUM (Sales) FROM [dbo].[Sales Data])) AS SalesPercentage
+From Region
+```
+8. identify products with no sales in the last quarter.
+```
+SELECT Product FROM [dbo].[Sales Data]
+WHERE Product NOT IN (SELECT Product FROM [dbo].[Sales Data]
+Where OrderDate BETWEEN '2024-07-01' AND '2024-09-30')
+GROUP BY Product
+```
 
 ### Results/Findings
 
