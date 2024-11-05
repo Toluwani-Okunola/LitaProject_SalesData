@@ -8,6 +8,13 @@ This data analysis project aims to provide insights into the sales performance o
 ### Data Source
 The primary dataset used for this analysis is the "sales data.csv" file containing detailed information about each sales made by the store. This was provided by the Incubator Hub.
 
+### Metrics of Focus
+1. Total Sales
+2. Product Performance
+3. Regional performance
+4. YOY growth rate
+
+
 ### Tool Used
 - Excel: 
   - Data Cleaning and Preparation
@@ -100,7 +107,7 @@ GROUP BY Product
 ```
 ![sales data q8](https://github.com/user-attachments/assets/7f97e855-6f95-4b7b-8e9f-a3427a73c5f5)
 
-### Visual Analysis 
+### Visual Analysis Inference
 Data summary using pivot table
 ![Sales Data](https://github.com/user-attachments/assets/584cff12-8d7e-4256-a3bc-72fb3bb49507)
 ![sales data 1](https://github.com/user-attachments/assets/f67e732a-57b6-474b-9be3-bfbe48da8e34)
@@ -115,18 +122,32 @@ Data Visualization
 
 
 
-
-
-
-
-
 ### Results/Findings
+1. Total Revenue: 2,101,090; Average Revenue: 212
+2. Total Quantity: 68,461; Average Quantity: 7
+3. Total Orders: 9,921
+4. Top-Performing Products (Revenue):
+    - Shoe (1st)
+    - Shirt (2nd)
+    - Hat (3rd)
+5. Top-Performing Products (Quantity):
+    - Hat (1st)
+    - Shoe (2nd)
+    - Shirt (3rd)
+6. Best-Performing Regions:
+    - South (1st)
+    - East (2nd)
+7. Best performing regions Product Sales:
+    - South: Gloves, Shoes, Socks
+    - East: Hat, Jacket, Shirt, Shoes
+8. Sales Trend: Steady increase with notable peaks in February (2023 and 2024)
 
 ### Reccommendation
-1. Rotate products monthly to ensure equal market exposure.
-2. Focus on Shirt, the second-best performing product by revenue and third by quantity.
-3. Introduce Hat and Shirt to the South region to boost revenue.
-4. Replicate the successful February marketing strategy throughout the year.
+1. Expand market by exposing more products to the market monthly
+2. Introduce Hat, Shirt and shoes to all regions to boost revenue.
+3. Replicate the successful February marketing strategy throughout the year.
+4. Invest in marketing snd promotion
+5. Use marketing strategy to target top performing regions
 
 ### Limitation
 I created a calculated column named Sales by mltiplying unit pric and quantity. This is an important column to analysis the sales performance of the store
