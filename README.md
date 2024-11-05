@@ -123,6 +123,10 @@ Data Visualization
 ### Results/Findings
 
 ### Reccommendation
+1. Rotate products monthly to ensure equal market exposure.
+2. Focus on Shirt, the second-best performing product by revenue and third by quantity.
+3. Introduce Hat and Shirt to the South region to boost revenue.
+4. Replicate the successful February marketing strategy throughout the year.
 
 ### Limitation
 I created a calculated column named Sales by mltiplying unit pric and quantity. This is an important column to analysis the sales performance of the store
