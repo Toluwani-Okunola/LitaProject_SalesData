@@ -28,7 +28,7 @@
 
 ### Project Overview
 
-This data analysis project aims to provide insights into the sales performance of a retail store over the past and current year. By analysising various aspect of the data, we seek to identify (top selling product, product performance, regional performance and monthly sales trend, make data driven reccommendation and gain deeper understanding of the store performance
+This data analysis project aims to provide insights into the sales performance of a retail store over the past and current year. By analysising various aspect of the data, we seek to identify top selling product, product performance, regional performance and monthly sales trend, make data driven reccommendation and gain deeper understanding of the store performance
 
 
 ### Data Source
@@ -74,6 +74,31 @@ EDA involves exploring the sales data to answer key questions, such as;
 ### Data Analysis
 
 *These are the excel formular i used to calculate the avearage sales per product and total revenue per region*
+Formular used to calculate average sales per product
+SHIRT
+```
+=AVERAGEIF(Table1[Product],C2, Table1[Sales])
+```
+SHOE
+```
+=AVERAGEIF(Table1[Product],C3, Table1[Sales])
+```
+HAT
+```
+=AVERAGEIF(Table1[Product],C4, Table1[Sales])
+```
+GLOVES
+```
+=AVERAGEIF(Table1[Product],C5, Table1[Sales])
+```
+JACKET
+```
+=AVERAGEIF(Table1[Product],C6, Table1[Sales])
+```
+SOCKS
+```
+=AVERAGEIF(Table1[Product],C7, Table1[Sales])
+```
 
 ![S Formular Result](https://github.com/user-attachments/assets/7c0ea4bc-cf20-42aa-a5e7-2e45e36606ee)
 
