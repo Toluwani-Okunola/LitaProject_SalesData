@@ -35,7 +35,7 @@
 ### Project Overview
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-This data analysis project aims to provide insights into the sales performance of a retail store over the past and current year. By analysising various aspect of the data, we seek to identify top selling product, product performance, regional performance and monthly sales trend, make data driven reccommendation and gain deeper understanding of the store performance
+This data analysis project aims to provide insights into the sales performance of a retail store over the past and current year. By analysising various aspect of the data, I seek to identify top selling product, product performance, regional performance and monthly sales trend, make data driven reccommendation and gain deeper understanding of the store performance
 
 
 ### Data Source
