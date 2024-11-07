@@ -16,6 +16,10 @@
 
 [Data Analysis](#data-analysis)
 
+  - [Formulars](#formulars)
+  
+  - [Queries](#queries)
+
 [Visual Analysis Inference](#visual-analysis-inference)
 
 [Results and Findings](#results-and-findings)
@@ -27,16 +31,35 @@
 
 
 ### Project Overview
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This data analysis project aims to provide insights into the sales performance of a retail store over the past and current year. By analysising various aspect of the data, we seek to identify top selling product, product performance, regional performance and monthly sales trend, make data driven reccommendation and gain deeper understanding of the store performance
 
 
 ### Data Source
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The primary dataset used for this analysis is the "sales data.csv" file containing detailed information about each sales made by the store. This was provided by the Incubator Hub.
 
+This dataset include the following columns:
+
+Order ID - Unique Order ID for each customer
+
+Customer ID - Unique ID to identify each customer
+
+Product - Name of the product
+
+Region - Region where the customer belong
+
+Order Date - Order Date of the product
+
+Quantity - Quanity of the product
+
+Unit Price - Price of the product
+
 
 ### Metrics of Focus
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Total Sales
 2. Product Performance
@@ -45,6 +68,7 @@ The primary dataset used for this analysis is the "sales data.csv" file containi
 
 
 ### Tool Used
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - Excel: 
   - Data Cleaning and Preparation
@@ -56,6 +80,7 @@ The primary dataset used for this analysis is the "sales data.csv" file containi
 
 
 ### Data Cleaning and Preparation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In the initial stage, I performed the following task:
 1. Data Loading and Inspection
@@ -63,6 +88,7 @@ In the initial stage, I performed the following task:
 
 
 ### Exploratory Data Analysis
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 EDA involves exploring the sales data to answer key questions, such as;
   1. What is the overall sales trends?
@@ -73,8 +99,11 @@ EDA involves exploring the sales data to answer key questions, such as;
 
 ### Data Analysis
 
-*These are the excel formular i used to calculate the avearage sales per product and total revenue per region*
+#### Formulars
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Formular used to calculate average sales per product
+
 SHIRT
 ```
 =AVERAGEIF(Table1[Product],C2, Table1[Sales])
@@ -87,7 +116,7 @@ HAT
 ```
 =AVERAGEIF(Table1[Product],C4, Table1[Sales])
 ```
-GLOVES
+SOCKS
 ```
 =AVERAGEIF(Table1[Product],C5, Table1[Sales])
 ```
@@ -95,15 +124,36 @@ JACKET
 ```
 =AVERAGEIF(Table1[Product],C6, Table1[Sales])
 ```
-SOCKS
+GLOVES
 ```
 =AVERAGEIF(Table1[Product],C7, Table1[Sales])
+```
+
+####Formular used to calculate total sales per region
+
+NORTH
+```
+=SUMIF(Table1[Region],D2,Table1[Sales])
+```
+SOUTH
+```
+=SUMIF(Table1[Region],D3,Table1[Sales])
+```
+EAST
+```
+=SUMIF(Table1[Region],D4,Table1[Sales])
+```
+WEST
+```
+=SUMIF(Table1[Region],D5,Table1[Sales])
 ```
 
 ![s formular result](https://github.com/user-attachments/assets/d8f0c7a0-92d4-4f4b-b092-67bba8a44b69)
 
 
-*These are the codes I wrote to query the data*
+
+#### Queries
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ```
 SELECT * FROM [dbo].[Sales Data]
@@ -174,17 +224,24 @@ GROUP BY Product
 ![sales data q8](https://github.com/user-attachments/assets/7f97e855-6f95-4b7b-8e9f-a3427a73c5f5)
 
 
+
 ### Visual Analysis Inference
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Data summary using pivot table**
 
+*PRODUCT*
 ![Sales Data](https://github.com/user-attachments/assets/584cff12-8d7e-4256-a3bc-72fb3bb49507)
 
+*REGION*
 ![sales data 1](https://github.com/user-attachments/assets/f67e732a-57b6-474b-9be3-bfbe48da8e34)
 
+*MONTHS and YEAR*
 ![sales data 2](https://github.com/user-attachments/assets/df2b3cb7-f203-455d-8811-e99ccc735c90)
 
+*INTERESTING SUMMARY*
 ![sales data 3](https://github.com/user-attachments/assets/68a3f8e5-c49d-4ccd-bdfb-929ee4622606)
+
 
 
 **Data Visualization**
@@ -199,6 +256,7 @@ GROUP BY Product
 
 
 ### Results and Findings
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Total Revenue: 2,101,090; Average Revenue: 212
 2. Total Quantity: 68,461; Average Quantity: 7
@@ -218,9 +276,11 @@ GROUP BY Product
     - South: Gloves, Shoes, Socks
     - East: Hat, Jacket, Shirt, Shoes
 8. Sales Trend: Steady increase with notable peaks in February (2023 and 2024)
+9. The retail store sold one product in a month all through the period of gathering this dataset
 
 
 ### Recommendation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Expand market by exposing more products to the market monthly
 2. Introduce Hat, Shirt and shoes to all regions to boost revenue.
@@ -230,6 +290,7 @@ GROUP BY Product
 
 
 ### Limitation
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 I created a calculated column named Sales by mltiplying unit price and quantity. This is an important column to analysis the sales performance of the store.
 
