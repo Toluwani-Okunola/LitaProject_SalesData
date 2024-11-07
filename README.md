@@ -100,7 +100,8 @@ SOCKS
 =AVERAGEIF(Table1[Product],C7, Table1[Sales])
 ```
 
-![S Formular Result](https://github.com/user-attachments/assets/7c0ea4bc-cf20-42aa-a5e7-2e45e36606ee)
+![s formular result](https://github.com/user-attachments/assets/d8f0c7a0-92d4-4f4b-b092-67bba8a44b69)
+
 
 *These are the codes I wrote to query the data*
 
