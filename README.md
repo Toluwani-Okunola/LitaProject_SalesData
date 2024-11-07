@@ -21,6 +21,8 @@
   - [Queries](#queries)
 
 [Visual Analysis Inference](#visual-analysis-inference)
+  - [Data Summary](#data-summary)
+  - [Data Visualization](#data-visualization)
 
 [Results and Findings](#results-and-findings)
 
@@ -226,25 +228,31 @@ GROUP BY Product
 
 
 ### Visual Analysis Inference
+
+#### Data Summary
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Data summary using pivot table**
-
 *PRODUCT*
+
 ![Sales Data](https://github.com/user-attachments/assets/584cff12-8d7e-4256-a3bc-72fb3bb49507)
 
 *REGION*
+
 ![sales data 1](https://github.com/user-attachments/assets/f67e732a-57b6-474b-9be3-bfbe48da8e34)
 
 *MONTHS and YEAR*
+
 ![sales data 2](https://github.com/user-attachments/assets/df2b3cb7-f203-455d-8811-e99ccc735c90)
 
+
 *INTERESTING SUMMARY*
+
 ![sales data 3](https://github.com/user-attachments/assets/68a3f8e5-c49d-4ccd-bdfb-929ee4622606)
 
 
 
-**Data Visualization**
+#### Data Visualization
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![sales visuals](https://github.com/user-attachments/assets/64458c48-8b2d-43df-9290-e1e4cbd8e192)
 
