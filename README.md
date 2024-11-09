@@ -106,50 +106,16 @@ EDA involves exploring the sales data to answer key questions, such as;
 #### Formulars
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Formular used to calculate average sales per product
+Formular for average sales per product
 
-SHIRT
 ```
-=AVERAGEIF(Table1[Product],C2, Table1[Sales])
-```
-SHOE
-```
-=AVERAGEIF(Table1[Product],C3, Table1[Sales])
-```
-HAT
-```
-=AVERAGEIF(Table1[Product],C4, Table1[Sales])
-```
-SOCKS
-```
-=AVERAGEIF(Table1[Product],C5, Table1[Sales])
-```
-JACKET
-```
-=AVERAGEIF(Table1[Product],C6, Table1[Sales])
-```
-GLOVES
-```
-=AVERAGEIF(Table1[Product],C7, Table1[Sales])
+=AVERAGEIF(RANGE, CRITERIA, AVERAGE-RANGE)
 ```
 
-####Formular used to calculate total sales per region
+Formular for total sales per region
 
-NORTH
 ```
-=SUMIF(Table1[Region],D2,Table1[Sales])
-```
-SOUTH
-```
-=SUMIF(Table1[Region],D3,Table1[Sales])
-```
-EAST
-```
-=SUMIF(Table1[Region],D4,Table1[Sales])
-```
-WEST
-```
-=SUMIF(Table1[Region],D5,Table1[Sales])
+=SUMIF(RANGE, CRITERIA, SUM-RANGE)
 ```
 
 ![s formular result](https://github.com/user-attachments/assets/d8f0c7a0-92d4-4f4b-b092-67bba8a44b69)
