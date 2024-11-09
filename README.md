@@ -65,8 +65,8 @@ Unit Price - Price of the product
 ### Metrics of Focus
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Total Sales
-2. Product Performance
+1. Revenue Growth Rate
+2. Average Order Value
 3. Regional performance
 4. Sales trends
 
