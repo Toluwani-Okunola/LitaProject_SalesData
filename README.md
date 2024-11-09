@@ -1,6 +1,8 @@
 # Lita Capstone Project
 
-## Sales Data
+## Project Title
+
+SALES DATA
 
 [Project Overview](#project-overview)
 
