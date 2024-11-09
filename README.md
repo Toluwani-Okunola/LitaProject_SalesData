@@ -22,9 +22,9 @@ SALES DATA
   
   - [Queries](#queries)
 
-[Visual Analysis Inference](#visual-analysis-inference)
-  - [Data Summary](#data-summary)
-  - [Data Visualization](#data-visualization)
+[Data Summary](#data-summary)
+
+[Visual Insight](#visual-insight)
 
 [Results and Findings](#results-and-findings)
 
@@ -195,9 +195,8 @@ GROUP BY Product
 
 
 
-### Visual Analysis Inference
 
-#### Data Summary
+### Data Summary
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *PRODUCT*
@@ -219,7 +218,7 @@ GROUP BY Product
 
 
 
-#### Data Visualization
+### Visual Insight
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![sales visuals](https://github.com/user-attachments/assets/64458c48-8b2d-43df-9290-e1e4cbd8e192)
