@@ -26,7 +26,7 @@ SALES DATA
 
 [Visual Insight](#visual-insight)
 
-[Results and Findings](#results-and-findings)
+[Findings](#findings)
 
 [Recommendation](#recommendation)
 
@@ -230,7 +230,7 @@ GROUP BY Product
 ![sales visual 3](https://github.com/user-attachments/assets/8e2df44e-3d40-4bb8-b757-df44506a1488)
 
 
-### Results and Findings
+### Findings
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Total Revenue: 2,101,090; Average Revenue: 212
